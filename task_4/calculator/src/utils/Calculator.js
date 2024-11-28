@@ -2,23 +2,24 @@ class Calculator {
   constructor() {}
 
   add(a, b) {
-    return a + b
+    return Number(a) + Number(b)
   }
   subtract(a, b) {
-    return a - b
+    return Number(a) - Number(b)
   }
   multiply(a, b) {
-    return a * b
+    return Number(a) * Number(b)
   }
   divide(a, b) {
-    if (b === 0) {
-      return "на ноль делить нельзя"
+    if (Number(b) !== 0) {
+      return Number(a) / Number(b)
+
     }
-    return a / b
+  return "на ноль делить нельзя"
   }
 }
 
-const calculator = new Calculator();
+export const calculator = new Calculator();
 
 console.log(calculator.add(4, 9));
 console.log(calculator.subtract(119, 9));

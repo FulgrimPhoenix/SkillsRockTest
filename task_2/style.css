@@ -13,11 +13,14 @@
 
 .to-do__input{
   width: 75%;
+  color: #000;
+
 }
 
 .to-do__input-button{
   margin-left: auto;
   width: 20%;
+  color: #000;
 }
 
 .to-do__list{
