@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Task List</title>
+  </head>
+  <body>
+    <div class="to-do">
+      <h1 style="margin: 0 0 20px;">Список дел</h1>
+      <div class="to-do__input-container">
+        <input type="text" class="to-do__input" />
+        <button class="to-do__input-button">Добавить</button>
+      </div>
+      <div class="to-do__list">
+        <template
+          class="to-do__list-item-template"
+          id="to-do__list-item-template"
+          id="task"
+        >
+          <div class="to-do__list-item">
+            <input
+              class="to-do__list-item-input"
+              type="checkbox"
+              id="1"
+              value="test"
+            />
+            <label class="to-do__list-item-label" for="1">Test</label>
+            <button class="to-do__list-item-delete-button">удалить</button>
+          </div>
+        </template>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts.js"></script>
+</html>

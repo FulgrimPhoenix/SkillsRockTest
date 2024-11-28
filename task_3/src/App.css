@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.load-icon{
+  border: 5px solid #969696;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 100px auto 0;
+  border-left: 5px solid #000;
+  animation: spin .5s infinite linear;
+}
+
+.slider{
+  margin: 40px auto 0;
+  height: 150px;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 0 0 12px #000;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.slider__window{
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider__button-left{
+  background: none;
+  border: none;
+  width: 25px;
+  height: 100%;
+  margin: auto 0;
+  padding: 0;
+  background: url(./images/Arrow-down.svg) center;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: opacity .2s linear;
+}
+
+.slider__button-left:hover{
+  opacity: 0.7;
+}
+
+.slider__button-right{
+  background: none;
+  border: none;
+  width: 25px;
+  height: 100%;
+  margin: auto 0;
+  padding: 0;
+  background: url(./images/Arrow-down.svg) center;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  transition: opacity .2s linear;
+}
+
+.slider__button-right:hover{
+  opacity: 0.7;
+}
+
+.slider__line{
+  margin: 0;
+  position: absolute;
+  box-sizing: content-box;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  height: 150px;
+  width: 150px;
+  transition: transform 0.3s ease-out;
+}
+
+.slider__slide{
+  list-style: none;
+}
+
+.slider__slide-img{
+  width: 150px;
+  height: 150px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
