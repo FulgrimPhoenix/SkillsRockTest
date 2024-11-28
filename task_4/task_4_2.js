@@ -44,5 +44,5 @@ testLibrary.addBook(testBook1)
 testLibrary.addBook(testBook2);
 testLibrary.addBook(testBook3)
 
-console.log(111, testLibrary.showListAvailableBooks());
+console.log(testLibrary.showListAvailableBooks());
 
