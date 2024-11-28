@@ -64,16 +64,16 @@ function App() {
         onChange={changeValue}
         value={value["sign"]}
       >
-        <option className="calculator__sign" value={"+"}>
+        <option value={"+"}>
           +
         </option>
-        <option className="calculator__sign" value={"-"}>
+        <option value={"-"}>
           -
         </option>
-        <option className="calculator__sign" value={"*"}>
+        <option value={"*"}>
           *
         </option>
-        <option className="calculator__sign" value={"/"}>
+        <option value={"/"}>
           /
         </option>
       </select>
